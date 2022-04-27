@@ -18,9 +18,14 @@
   <div class="container">
     <div id="main" class="card card-body">
       <h2 class="title">Add Items</h2>
-      <form class="form-inline mb-3">
-        <input type="text" class="form-control mb-2">
-        <input type="submit" class="btn btn-dark" value="Submit">
+      <form class="form-inline mb-3 row">
+        <input type="text" class="form-control mb-2 col ms-2 me-2">
+        <select class="form-control mb-2 col me-2">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <input type="submit" class="btn btn-dark col me-2" value="Submit" onsubmit="submit()">
       </form>
       <h2 class="title">Items</h2>
       <ul id="items" class="list-group">
@@ -29,6 +34,14 @@
         <li class="list-group-item">Item 3</li>
         <li class="list-group-item">Item 4</li>
       </ul>
+      <br>
+      <div id="output"></div>
+      <!-- <button onclick="buttonClick()" class="btn btn-dark btn-block" id="button">Click here</button> OLD WAY with onclick -->
+      <button class="btn btn-dark btn-block" id="button">Click here</button>
+      <br>
+      <div id="box" style="width:400px;height:200px;background:#f4f4f4">
+        <h3>Hello</h3>
+      </div>
     </div>
   </div>
   
