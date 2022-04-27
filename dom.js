@@ -58,14 +58,68 @@
 
 // QUERYSELECTORALL
 
-let titles = document.querySelectorAll('.title') // This actually returns a node list, so we can use array methods. 
+// let titles = document.querySelectorAll('.title') // This actually returns a node list, so we can use array methods. 
 
-console.log(titles);
+// console.log(titles);
 
-let odds = document.querySelectorAll('li:nth-child(odd)')
-console.log(odds);
+// let odds = document.querySelectorAll('li:nth-child(odd)')
+// console.log(odds);
 
-for (let i = 0; i < odds.length; i++) {
-  odds[i].style.backgroundColor = '#f4f4f4'
-}
+// for (let i = 0; i < odds.length; i++) {
+//   odds[i].style.backgroundColor = '#f4f4f4'
+// }
+
+// TRAVERSING THE DOM
+
+const itemList = document.querySelector('#items')
+
+// // parent node
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = '#f4f4f4'
+
+// // parent element
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = '#f4f4f4'
   
+// // child nodes
+// console.log(itemList.childNodes); // returns text(white space) and elements
+
+// // children
+// console.log(itemList.children); //HTML collection rather than node list. 
+
+// // FirstChild -- recognizes whitespace
+// console.log(itemList.firstChild) // returns '#text'
+
+
+// // FirstElementChild 
+// console.log(itemList.firstElementChild)
+// console.log(itemList.lastElementChild)
+
+// itemList.firstElementChild.style.backgroundColor = 'yellow'
+// itemList.lastElementChild.textContent = 'yellow'
+
+// lastChild vs lastElementChild
+// nextSibling vs nextElementSibling
+// previousSibling vs previousElementSibling
+
+// CREATING DOM ELEMENTS
+
+// createElement
+
+// const newDiv = document.createElement('div')
+// newDiv.className = 'hello'
+// newDiv.id = 'hello 1'
+// newDiv.setAttribute('title','hello div')
+
+// const newDivText = document.createTextNode('Hello World')
+
+// newDiv.appendChild(newDivText)
+
+// const container = document.querySelector('header .container')
+// const h1 = document.querySelector('header h1')
+
+// container.insertBefore(newDiv, h1)
+
+// newDiv.style.fontSize = '30px'
+
+// console.log(newDiv);
